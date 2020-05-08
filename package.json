@@ -1,6 +1,6 @@
 {
   "name": "lines-of-code",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "lib/index.js",
   "description": "Lines of Code is a command line tool which retrieves project information such as the amount of lines of code and language usage percentage.",
   "license": "MIT",
