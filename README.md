@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/itspedruu/lines-of-code/master/assets/logo.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/itspedruu/lines-of-code/master/assets/banner.png"/></p>
 
 <h1 align="center">Lines of Code</h1>
 
