@@ -1,0 +1,25 @@
+{
+  "name": "lines-of-code",
+  "version": "2.0.1",
+  "main": "lib/index.js",
+  "description": "Lines of Code is a command line tool which retrieves project information such as the amount of lines of code and language usage percentage.",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^6.8.0",
+    "jest": "^26.0.1",
+    "typescript": "^3.8.3"
+  },
+  "bin": {
+    "lines-of-code": "lib/index.js"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "test": "jest"
+  }
+}
