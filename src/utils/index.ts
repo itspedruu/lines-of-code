@@ -35,7 +35,7 @@ export default class utils {
 		const content = fs.readdirSync(path);
 
 		return utils.flat(content.map(file => 
-			CONSTANTS.IGNORE.includes(file) && exclude.includes(file)
+			CONSTANTS.IGNORE.includes(file) || exclude.includes(file)
 				? []
 				: fs.lstatSync(join(path, file)).isDirectory()
 					? utils.getFiles(join(path, file), exclude)
@@ -46,7 +46,8 @@ export default class utils {
 	static getMainPath(): Promise<string> {
 		return new Promise(resolve => {
 			fs.readFile(join(process.cwd(), 'tsconfig.json'), {encoding: 'utf8'}, (err, data) => {
-				if (err) resolve(process.cwd());
+				if (err) 
+					return resolve(process.cwd());
 	
 				const config = JSON.parse(data);
 
