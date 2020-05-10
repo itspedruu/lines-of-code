@@ -46,7 +46,7 @@ export default class utils {
 	static getMainPath(): Promise<string> {
 		return new Promise(resolve => {
 			fs.readFile(join(process.cwd(), 'tsconfig.json'), {encoding: 'utf8'}, (err, data) => {
-				if (err) return;
+				if (err) resolve(process.cwd());
 	
 				const config = JSON.parse(data);
 
